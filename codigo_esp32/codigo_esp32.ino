@@ -55,7 +55,6 @@ void setup(void) {
 umbral = 20; // Umbral para el piezoelectrico
 
 //Inicialización WIFI
-
   WiFi.begin(ssid, pass);
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
@@ -63,8 +62,8 @@ umbral = 20; // Umbral para el piezoelectrico
   }
   Serial.println("Connected to Wi-Fi");
 
-  // Start UDP
-  Udp.begin(12345);  // Local port to listen on (can be any unused port)
+  //Inicialización UDP
+  Udp.begin(12345);
 
 
 ////////////////////////////////
